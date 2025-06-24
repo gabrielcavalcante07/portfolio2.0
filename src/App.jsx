@@ -1,10 +1,10 @@
 import "./App.css";
 // import { VideoBack } from "./components/VideoBack";
 import { Header } from "./components/Header";
-import Orb from "./components/orb";
+import Orb from "./components/Orb";
 import { Home } from "./components/Home";
 import { Aboutme } from "./components/Aboutme";
-import { Projects } from "./components/projects";
+import { Projects } from "./components/Projects";
 
 export function App() {
   return (
