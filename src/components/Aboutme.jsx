@@ -10,7 +10,7 @@ import mephoto from "../assets/me.png";
 export function Aboutme() {
   return (
     <div
-      className="mt-14 flex flex-col justify-center items-center"
+      className="mt-12 flex flex-col justify-center items-center scroll-mt-16"
       id="aboutme"
     >
       <h1 className="text-primary text-4xl font-semibold">About Me</h1>
