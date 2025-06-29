@@ -11,7 +11,7 @@ export function Home() {
     >
       <SplitText
         text="Hi, I'm Gabriel Cavalcante"
-        className="text-2xl font-semibold text-center"
+        className="text-xl font-semibold text-center lg:text-2xl"
         delay={100}
         duration={0.3}
         ease="power3.out"
@@ -25,7 +25,7 @@ export function Home() {
       />
       <SplitText
         text="Develop Frontend"
-        className="text-2xl font-semibold text-center"
+        className="text-xl font-semibold text-center lg:text-2xl"
         delay={150}
         duration={0.6}
         ease="power3.out"

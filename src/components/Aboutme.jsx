@@ -11,23 +11,25 @@ export function Aboutme() {
   return (
     <div
       className="mt-12 flex flex-col justify-center items-center scroll-mt-16"
-      id="aboutme"
+      id="aboutme" 
     >
       <h1 className="text-primary text-4xl font-semibold">About Me</h1>
-      <div className="mt-20 flex w-4/5 gap-32">
+      <div className="mt-10 flex flex-col w-4/5 gap-10 md:  lg:flex-row lg:gap-32">
           <img
             src={mephoto}
-            className="w-80 rounded-full shadow-lg shadow-primary"
+            className="flex w-4/5 rounded-full shadow-lg shadow-primary  self-center md:w-72 lg:w-80 lg:self-start"
             alt="photo me"
           />
 
-        <p className="text-justify leading-7">
-          Olá, meu nome é Gabriel Cavalcante. Desde cedo, sempre tive interesse
-          em tecnologia, seja criando designs ou editando fotos e vídeos. Quando
-          conheci o mundo da programação e percebi as oportunidades que ele
-          oferece, me apaixonei pela área. Atualmente, sou formado como Técnico
-          em Desenvolvimento de Sistemas (DS) pela Etec Professor Basilides de
-          Godoy.
+        <div className="text-justify leading-7">
+          <p>
+            Olá, meu nome é Gabriel Cavalcante. Desde cedo, sempre tive interesse
+            em tecnologia, seja criando designs ou editando fotos e vídeos. Quando
+            conheci o mundo da programação e percebi as oportunidades que ele
+            oferece, me apaixonei pela área. Atualmente, sou formado como Técnico
+            em Desenvolvimento de Sistemas (DS) pela Etec Professor Basilides de
+            Godoy.
+          </p>
           <p className="mt-4">
             No meu dia a dia, desenvolvo projetos utilizando ReactJS e Tailwind.
             No entanto, estou sempre em busca de ampliar meus conhecimentos,
@@ -36,7 +38,7 @@ export function Aboutme() {
             desenvolvimento profissional, já que ainda não atuei formalmente na
             área.
           </p>
-          <div className="flex mt-12 gap-2 text-3xl">
+          <div className="flex mt-12 gap-2 text-3xl justify-center lg:justify-start">
             <i className="cursor-pointer devicon-html5-plain colored"></i>
             <i className="cursor-pointer devicon-css3-plain colored"></i>
             <i className="cursor-pointer devicon-javascript-plain colored"></i>
@@ -46,7 +48,7 @@ export function Aboutme() {
             <i className="cursor-pointer devicon-tailwindcss-original colored"></i>
             <i className="cursor-pointer devicon-mysql-original colored"></i>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );

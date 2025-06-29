@@ -29,7 +29,7 @@ export function App() {
         id="projects"
       >
         <h1 className="text-primary text-4xl font-semibold">Projects</h1>
-        <div className="flex gap-4 w-4/5">
+        <div className="flex flex-col gap-1 w-4/5 items-center lg:flex-row lg:gap-4">
             <Projects 
             img={imgRaptor}
             title="Raptor Street"
