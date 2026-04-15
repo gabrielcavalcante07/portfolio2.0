@@ -35,10 +35,14 @@ export const TextType = ({
   const textArray = useMemo(() => (Array.isArray(text) ? text : [text]), [text]);
 
   const getRandomSpeed = useCallback(() => {
-    if (!variableSpeed) return typingSpeed;
-    const { min, max } = variableSpeed;
-    return Math.random() * (max - min) + min;
-  }, [variableSpeed, typingSpeed]);
+  if (!variableSpeed) return typingSpeed;
+
+  const { min, max } = variableSpeed;
+  const base = (min + max) / 2;
+  const variation = (max - min) / 4;
+
+  return base + (Math.random() - 0.5) * variation;
+}, [variableSpeed, typingSpeed]);
 
   const getCurrentTextColor = () => {
     if (textColors.length === 0) return 'inherit';

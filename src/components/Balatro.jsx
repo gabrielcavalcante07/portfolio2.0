@@ -102,7 +102,7 @@ void main() {
 }
 `;
 
-export default function Balatro({
+export function Balatro({
   spinRotation = -2.0,
   spinSpeed = 7.0,
   offset = [0.0, 0.0],

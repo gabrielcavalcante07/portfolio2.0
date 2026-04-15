@@ -1,28 +1,54 @@
+import { Contact } from "./Contact";
+import { CodeXml, Fingerprint, Home } from "lucide-react";
+
 export function Header() {
   return (
-    <header className="bg-black/10 backdrop-blur-xl w-11/12 h-14 flex px-8 rounded-full items-center fixed top-0 left-2/4 -translate-x-2/4 z-20 justify-center sm:w-9/12">
-      {/* <a href="#" className="text-3xl font-Beau-Rival">Gcsantos</a> */}
-      <ul className="flex gap-4 text-xs">
-        <li><a className="opacity-75 hover:opacity-100 duration-300" href="#home">Home</a></li>
-        <li><a className="opacity-75 hover:opacity-100 duration-300" href="#aboutme">About me</a></li>
-        <li><a className="opacity-75 hover:opacity-100 duration-300" href="#projects">Projects</a></li>
-        <li><a className="opacity-75 hover:opacity-100 duration-300" href="#">Contact</a></li>
-      </ul>
+    <header
+      className="w-screen flex fixed z-50 justify-center items-center 
+      overflow-hidden"
+    >
+      <div className="flex w-full py-3 px-3 sm:px-5 justify-between sm:items-center h-20 sm:h-14  overflow-hidden">
+        <a href="#" className="flex text-2xl bg-zinc-950/10 sm:bg-transparent backdrop-blur-sm sm:backdrop-blur-0 rounded-lg px-2 h-12 items-center">
+          GC
+        </a>
+        <div className="hidden sm:flex">
+          <Contact />
+        </div>
+      </div>
+
+      <div className="bottom-1 sm:top-1 fixed h-14 px-5 py-3 rounded-full 
+      bg-black/10 backdrop-blur-[7px] shadow-glass">
+        <ul className="flex w-full h-full items-center justify-center gap-4 
+        text-xs">
+          <a
+            className="flex gap-2 items-center opacity-75 hover:opacity-100 
+            duration-300 font-semibold"
+            href="#home"
+          >
+            <Home />
+            <span className="hidden sm:flex">Home</span>
+          </a>
+          <a
+            className="flex gap-2 items-center opacity-75 hover:opacity-100 
+            duration-300 font-semibold"
+            href="#aboutme"
+          >
+            <Fingerprint />
+            <span className="hidden sm:flex">Sobre mim</span>
+          </a>
+          <a
+            className="flex gap-2 items-center opacity-75 hover:opacity-100 
+            duration-300 font-semibold"
+            href="#projects"
+          >
+            <CodeXml />
+            <span className="hidden sm:flex">Projetos</span>
+          </a>
+          <div className="flex sm:hidden">
+            <Contact />
+          </div>
+        </ul>
+      </div>
     </header>
   );
 }
-
-
-    // @media (max-width: 768px){4
-    //    .header{
-    //       display: flex;
-    //       top: unset;  
-    //       bottom: 0;    
-    //       width: 70vw;    
-    //       justify-content: center;
-    //    }
-    //    #name{
-    //       display: none;
-    //    }
-
-    // }
