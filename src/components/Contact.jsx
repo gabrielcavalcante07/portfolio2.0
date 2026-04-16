@@ -32,6 +32,8 @@ export const Contact = () => {
 
   function SendMessage(event) {
     event.preventDefault();
+    if (isLoading) return;
+    isLoading(true)
 
     const templateParams = {
         userName: userName,
