@@ -1,7 +1,7 @@
 import iconMacClose from "../assets/close.png";
 import iconMacMinimize from "../assets/minimize.png";
 import iconMacExpand from "../assets/expand.png";
-import { Cog, Database, Globe, Wrench } from "lucide-react";
+import { Cog, Database, Globe, Server, Wrench } from "lucide-react";
 import { CardsTechs } from "./CardsTechs";
 
 export function Technologies() {
@@ -24,7 +24,7 @@ export function Technologies() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-6">
 
           <div className="rounded-md flex p-4 shadow-glass overflow-hidden ease-in-out duration-300 hover:scale-[1.02]">  
             <div className="flex flex-col gap-5 w-full">
@@ -36,7 +36,12 @@ export function Technologies() {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full">
                 <CardsTechs
                   iconTech={"react-plain colored"}
-                  nameTech={"React"}
+                  nameTech={"React.js"}
+                />
+                <CardsTechs
+                  imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"}
+                  nameTech={"Next.js"}
+                  
                 />
                 <CardsTechs
                   iconTech={"javascript-plain colored"}
@@ -64,7 +69,11 @@ export function Technologies() {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full">
                 <CardsTechs 
                   imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"}
-                  nameTech={"Java (Estudando)"}
+                  nameTech={"Java"}
+                />
+                <CardsTechs 
+                  iconTech={"spring-original colored"}
+                  nameTech={"Spring"}
                 />
               </div>
             </div>
@@ -74,13 +83,17 @@ export function Technologies() {
             <div className="flex flex-col gap-5 w-full">
               <div className="flex items-center gap-2">
                   <Database />
-                <h2 className="font-semibold">Banco de dados</h2>
+                <h2 className="font-semibold">Database</h2>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full">
                 <CardsTechs
                   iconTech={"mysql-plain colored"}
                   nameTech={"MySQL"}
+                />
+                <CardsTechs
+                  iconTech={"postgresql-plain colored"}
+                  nameTech={"PostgreSQL"}
                 />
               </div>
             </div>
@@ -89,8 +102,8 @@ export function Technologies() {
           <div className="rounded-md flex p-4 shadow-glass overflow-hidden ease-in-out duration-300 hover:scale-[1.02]">  
             <div className="flex flex-col gap-5 w-full">
               <div className="flex items-center gap-2">
-                  <Wrench />
-                <h2 className="font-semibold">Ferramnetas</h2>
+                  <Server />
+                <h2 className="font-semibold">Devops & Version Control</h2>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full">
@@ -100,15 +113,31 @@ export function Technologies() {
                 />
                 <CardsTechs
                   iconTech={"github-plain"}
-                  nameTech={"Github"}
+                  nameTech={"GitHub"}
                 />
+                <CardsTechs
+                  iconTech={"docker-plain colored"}
+                  nameTech={"Docker"}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-md flex p-4 shadow-glass overflow-hidden ease-in-out duration-300 hover:scale-[1.02]">  
+            <div className="flex flex-col gap-5 w-full">
+              <div className="flex items-center gap-2">
+                  <Wrench />
+                <h2 className="font-semibold">Tools</h2>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 w-full">
                 <CardsTechs
                   imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"}
                   nameTech="VS Code"
                   />
                 <CardsTechs
-                  imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"}
-                  nameTech="Visual Studio"
+                  imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"}
+                  nameTech="Intellij"
                   />
                 <CardsTechs
                   imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"}
@@ -117,6 +146,10 @@ export function Technologies() {
                 <CardsTechs
                   iconTech="vercel-plain"
                   nameTech="Vercel"
+                />
+                <CardsTechs 
+                  imgTech={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"}
+                  nameTech={"Linux"}
                 />
               </div>
             </div>
